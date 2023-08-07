@@ -1,0 +1,47 @@
+
+
+<div class="obesity-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+            <div class="obesity-items">
+          <span>STARM HEALTH</span>
+          <h2 class="primary-heading">Effective Treatments of Obesity</h2>
+          <p class="desc-text">Overweight and obesity are defined as abnormal or excessive fat accumulation that is dangerous to health.</p>
+        </div>
+        </div>
+
+
+        <ng-container>
+            <ng-container *ngTemplateOutlet="obesity"></ng-container>
+            </ng-container>
+
+
+            <div class="col-md-6">
+                <div class="book-now-item">
+                <h2 class="primary-heading"> provide top medical care. Book an appointment now.</h2>
+                <button class="round-button">BOOK AN APPOINTMENT</button>
+            </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <ng-template #obesity>
+        <div class="col-md-3" *ngFor="let list of obesityList">
+            <div class="obesity-items">
+            <div class="obesity-img">
+                <img src={{list.img}} alt="">
+            </div>
+            <div class="obesity-desc">
+                <h4>{{list.name}}</h4>
+                <p class="desc-text">{{list.desc}}</p>
+                <a>Read More</a>
+            </div>
+            </div>
+        </div>
+      </ng-template>
+

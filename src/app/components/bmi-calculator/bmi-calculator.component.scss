@@ -1,0 +1,111 @@
+
+
+.calculator{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    .all-info{
+        h4{
+        margin-top: 3rem;
+        }
+    }
+.bmi-stats{
+    .bmi-items{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        p{
+            border-bottom: 1px solid #CCCCCC;
+            color: #444444;
+            width: calc(50% - 1rem);
+            flex-grow: 1;
+        }
+    }
+}
+
+.bmi-calculator{
+    .calculator-heading{
+        border-radius: 1rem 1rem 0 0;
+        background: #0E9080;
+        font-family: semi-bold;
+        color: #fff;
+        font-size: 2rem;
+        padding: 1.5rem 2rem;
+    }
+    .form{
+        background-color: #DBEEEC;
+        padding-bottom: 2rem;
+        padding-left: 13px;
+        padding-right: 13px;
+
+        span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            font-size: 1rem;
+            background: #DDDDDD;
+            border: 1px solid #ccc;
+            border-radius: 0 0.4rem 0.4rem 0;
+            color: #666666;
+            font-family: regular;
+        }
+        input{
+            font-size: 1rem;
+            font-family: regular;
+            height: 4rem;
+            box-shadow: none;
+            border-radius: 0.5rem 0 0 0.5rem;
+            border-color: #DDDDDD;
+        }
+        .form-type{
+            display: flex;
+            gap: 4rem;
+            align-items: center;
+
+            .form-check{
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+            }
+        }
+
+        .form-height{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+
+            .input-group{
+                display: flex;
+
+                .metric-weight{
+                    width: 90%;
+                }
+
+                input{
+                    width: 10rem;
+                }
+
+              
+            }
+        }
+        .form-weight{
+            display: flex;
+            margin-bottom: 2rem;
+
+
+            input{
+                width: 90%;
+            }
+        }
+
+        .buttons{
+            display: flex;
+            gap: 2rem;
+        }
+    }
+}
+
+}
+

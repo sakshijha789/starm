@@ -1,0 +1,147 @@
+
+
+<div class="about-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 banner-heading">
+                <h1>BMI Calculator</h1>
+                <h3>Home / BMI Calculator</h3>
+            </div>
+            <div class="col-md-6"> 
+                <img src="./assets/images/bmi-banner.png" class="about-us-banner" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="calculator">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 all-info">
+        <h3>Calculate Your Body Mass Index (BMI)</h3>
+        <p class="desc-text">Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.</p>
+        <h4>BMI Categories:</h4>
+
+        <div class="bmi-stats">
+            <div class="bmi-items">
+                <p>Severe Thinness - 16</p>
+                <p>Moderate Thinness - 16 to 17</p>
+            </div>
+
+            <div class="bmi-items">
+                <p>Mild Thinness - 17 to 18.5</p>
+                <p>Normal - 18.5 to 25</p>
+            </div>
+
+            <div class="bmi-items">
+                <p>Overweight - 25 to 30</p>
+                <p>Obese Class I - 30 to 35</p>
+            </div>
+
+            <div class="bmi-items">
+                <p>Obese Class II - 35 to 40</p>
+                <p>Obese Class III - 40</p>
+            </div>
+        </div>
+
+        <div class="bmi-info">
+            <h4>Interpretation of the BMI Index</h4>
+            <ul>
+                <li>Medical management for obesity is recommended under supervision of an Endocrinologist upto a BMI of 32.5.</li>
+                <li>Bariatric and Metabolic surgery should be considered as a treatment option for obesity in people with Asian ethnicity with a BMI more than 37.5 kg/m2 with or without co-morbidities.</li>
+                <li>Bariatric and Metabolic surgery should be considered as a treatment option for obesity in people with Asian ethnicity above a BMI of 32.5 along with at least two of the additional criteria for metabolic syndrome.</li>
+            </ul>
+        </div>
+
+        </div>
+
+        <div class="col-md-6">
+            <div class="bmi-calculator">
+                <div class="calculator-heading">BMI Calculator</div>
+                <div class="form">
+                    <mat-card>
+                        <mat-card-content>
+                          <section class="example-section">
+                            <mat-radio-group [(ngModel)]="labelPosition">
+                              <mat-radio-button class="example-margin" value="after">Imperial</mat-radio-button>
+                              <mat-radio-button class="example-margin" value="before">Metric</mat-radio-button>
+                            </mat-radio-group>
+                          </section>
+                        </mat-card-content>
+                      </mat-card>
+                      
+                      <mat-card class="result">
+                        <mat-card-content>
+ 
+                          <section class="example-section">
+                            <ng-container *ngIf="labelPosition=='after'">
+                                <form [formGroup]="submitForm">
+                                <h4>Height</h4>
+                        <div class="form-height">
+                            
+                            <div class="input-group">
+                                <input type="number" name="feet" placeholder="Enter height in ft" formControlName="feet" />
+                                <span>ft</span>
+                                <p style="color: red;" *ngIf="feet && feet.invalid && feet.touched">*required</p>
+                            </div>
+                            <div class="input-group">
+                                <input type="number" name="in" placeholder="Enter height in in" formControlName="in" />
+                                <span>in</span>
+                                <p style="color: red;" *ngIf="in && in.invalid && in.touched">*required</p>
+                            </div>
+                        </div>
+
+                        <h4>Weight</h4>
+                        <div class="form-weight">
+                            <input type="number" name="weight" placeholder="Enter weight in lbs" formControlName="lbs" />
+                            <span>lbs</span>
+                            <p style="color: red;" *ngIf="lbs && lbs.invalid && lbs.touched">*required</p>
+                        </div>
+
+                        <div class="buttons">
+                        <button (click)="reset()" class="round-button">RESET</button>
+                        <button (click)="imperialcalculate()" class="round-button">CALCULATE</button>
+                        </div>
+                        <p style="color: rgb(65, 85, 65);" *ngIf="feet && feet.valid && in && in.valid && lbs && lbs.valid">Your bmi is : {{imperialBmi}}</p>
+                        </form>
+                            </ng-container>
+                            <ng-container *ngIf="labelPosition=='before'">
+                                <form [formGroup]="submitForm">
+                                <h4>Height</h4>
+                        <div class="form-height">
+                            <div class="input-group">
+                                <input class="metric-weight" type="number" name="cm" placeholder="Enter height in cm" formControlName="cm" />
+                                <span>cm</span>
+                                <p style="color: red;" *ngIf="cm && cm.invalid && cm.touched">*required</p>
+                            </div>
+                        </div>
+
+                        <h4>Weight</h4>
+                        <div class="form-weight">
+                            <input type="number" name="kg" placeholder="Enter weight in kg" formControlName="kg" />
+                            <span>kg</span>
+                            <p style="color: red;" *ngIf="kg && kg.invalid && kg.touched">*required</p>
+                        </div>
+                        <div class="buttons">
+                            <button (click)="reset()" class="round-button">RESET</button>
+                            <button (click)="metriccalculate()" class="round-button">CALCULATE</button>
+                            </div>
+                            <p style="color: rgb(65, 85, 65);" *ngIf="cm && cm.valid && kg && kg.valid">Your bmi is : {{metricBmi}}</p>
+                            </form>
+                            </ng-container>
+                
+                          </section>
+                        </mat-card-content>
+                      </mat-card>
+                      
+
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+        </div>
+        </div>
+
+

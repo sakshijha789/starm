@@ -1,0 +1,45 @@
+.form{
+    margin-bottom: 5rem;
+    .form-address{
+        background-color: #FFECE8;
+        padding: 5rem;
+        .get-in-touch{
+            background-color: #fff;
+            width: 100%;
+        }
+        button{
+            width: 100%;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .form-control{
+        width: 100%;
+    }
+}
+.col-md-5{
+    padding-left: 0;
+.full-address{
+    background-color: #0E9080;
+    color: #fff;
+    padding: 3rem;
+    .heading-location{
+        font-family: regular;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    li{
+        list-style-type: none;
+        line-height: 2;
+
+
+        img{
+            padding-top: 2rem;
+        }
+    }
+}
+}
+}
+
+.map-container{
+    margin-bottom: 5rem;
+}

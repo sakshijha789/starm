@@ -1,0 +1,163 @@
+
+.booking-strip{
+    background: linear-gradient( to top, white 50%, #ffece8 50% 80%, #ffece8 80% );
+    padding: 2rem;
+    .row{
+        border-radius: 1.5rem;
+        box-shadow: 0 0 3rem #999;
+        overflow: hidden;
+    }
+    .booking-item{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 3rem;
+    }
+    .emergency{
+        color: #222;
+        background-color: #fff;
+    }
+
+    .appointment{
+        color: #fff;
+        background-color: #E45C3A;
+
+        button{
+            border: 1px solid #fff;
+        }
+    }
+    .open-hour{
+        color: #fff;
+        background-color:  #0E9080;
+    }
+}
+
+.our-vision{
+    color: #fff;
+    background-color: #E45C3A;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    padding-top: 3rem;
+
+    .container{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.about-starm{
+    .col-md-6{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.contact-us-banner{
+    color: #fff;
+    margin-bottom: 5rem;
+
+    .row{
+        border-radius: 1.5rem;
+        overflow: hidden;
+    
+    .contact-us-item{
+        padding: 4rem 4rem;
+        a{
+            font-family: semi-bold;
+            font-size: 3rem;
+            margin-top: 0.5rem;
+            text-decoration: none;
+            display: block;
+        }
+    }
+    .about-number{
+        background-color: #0E9080;
+        position: relative;
+
+        .mail-img{
+            position: absolute;
+            top: 50%;
+            right: -4rem;
+            transform: translateY(-50%);
+            width: 8rem;
+            padding: 1rem;
+            border: 1px solid #fff;
+            border-radius: 50%;
+
+            img{
+                width: 6rem;
+                background: #fff;
+                border-radius: 50%;
+                padding: 1rem;
+            }
+        }
+    }
+    .about-email{
+        background-color: #E45C3A;
+    }
+}
+}
+
+
+
+.latest-news{
+    margin-bottom: 5rem;
+    .starm{
+        color:  #0E9080;
+            font-size:20px;
+            font-family: semi-bold;
+            text-align: center;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .social-name{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: #222;
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+    .post-container{
+        border: 1px solid #ccc;
+        border-radius: 1rem;
+
+        .social-container-heading{
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+
+            a{
+                background: #5395F3;
+                border-radius: 3px;
+                font-size: 1.3rem;
+                font-family: semi-bold;
+                color: #fff;
+                text-decoration: none;
+                padding: 0.4rem 0.4rem;
+            }
+
+            .info{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                .image{
+                    height: 4rem;
+                    width: 4rem;
+                    padding: 0.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

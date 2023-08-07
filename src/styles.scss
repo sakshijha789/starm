@@ -1,0 +1,97 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$starm-primary: mat.define-palette(mat.$indigo-palette);
+$starm-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$starm-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$starm-theme: mat.define-light-theme((
+  color: (
+    primary: $starm-primary,
+    accent: $starm-accent,
+    warn: $starm-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($starm-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+@font-face {
+  font-family:semi-bold;
+  src: url(./assets/fonts/Wix_Madefor_Display/static/WixMadeforDisplay-SemiBold.ttf);
+}
+@font-face {
+  font-family:regular;
+  src: url(./assets/fonts/Wix_Madefor_Display/static/WixMadeforDisplay-Regular.ttf);
+}
+
+
+.primary-heading{
+  font-size: 42px;
+  font-family: semi-bold;
+}
+
+.desc-text{
+  font-size: 15px;
+  font-family: regular;
+}
+
+.about-container{
+  background-color:  #FFECE8;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+      .about-us-banner{
+          width: 100%;
+          
+      }
+  
+}
+
+.banner-heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.round-button{
+  background: #E45C3A;
+  color: #fff;
+  font-size: 14px;
+  font-family: semi-bold;
+  border-radius: 3rem;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  transition: .3s;
+  width: max-content;
+  border: 1px solid #E45C3A;
+  cursor: pointer;
+}
+
+.round-button:hover{
+  background-color: #fff;
+  color: #E45C3A;
+  transition: .3s;
+}

@@ -1,0 +1,49 @@
+
+
+
+.expert-team{
+    padding-top: 5rem;
+}
+
+
+.doctor-card{
+    background: #0E9080;
+    border-radius: 1.5rem;
+    color: #fff;
+    overflow: hidden;
+
+    .info-img{
+        position: relative;
+        .doctor-img{
+            width: 100%;
+        }
+        button{
+            border: none;
+            border-radius: 81%;
+            position: absolute;
+            bottom: -2rem;
+            right: 50%;
+            transform: translateX(50%);
+            width: 6rem;
+            cursor: pointer;
+        }
+        .arrow{
+            position: absolute;
+            bottom: -2rem;
+            right: 50%;
+            transform: translateX(50%);
+            width: 6rem;
+            cursor: pointer;
+            transition: .3s;
+        }
+    }
+    .doctor-info{
+        padding: 4rem 2rem 4rem;
+        font-family: regular;
+        font-size: 20px;
+
+        .position{
+            font-size: 14px;
+        }
+    }
+}

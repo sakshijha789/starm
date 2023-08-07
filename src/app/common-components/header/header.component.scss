@@ -1,0 +1,18 @@
+
+.nav-item a:hover{
+    color:  #E45C3A;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.off-canvas-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #E45C3A;
+    bottom: 0;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

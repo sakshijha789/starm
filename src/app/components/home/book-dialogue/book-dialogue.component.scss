@@ -1,0 +1,48 @@
+
+
+.booking-card{
+    border-radius: 25px 25px 0px 0px;
+    .booking-heading{
+        color: #fff;
+        background-color: #E45C3A;
+        font-family: regular;
+        padding: 2rem 4rem;
+    }
+}
+
+.form-address{
+    background-color: #FFECE8;
+    padding: 2rem;
+    button{
+        background-color: #0E9080;
+    }
+    label{
+        font-family: semi-bold;
+        padding-bottom: 10px;
+    }
+    ::placeholder{
+        padding-left: 1rem;
+    }
+    .formcontrol{
+        width: 100%;
+        font-size: 1rem;
+        font-family: regular;
+        height: 2rem;
+        box-shadow: none;
+        border-radius: 0.5rem;
+        margin-bottom: 2rem;
+
+    }
+
+
+    .allergy-type{
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+
+        .form-check{
+            display: flex;
+            gap: 1rem;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+<div class="expert-team">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="primary-heading">Our Expert Team</h1>
+                <p class="desc-text">We have an expert team of doctors that will help you in having a good advice over obesity.</p>
+            </div>
+        </div>
+    </div>
+        <ng-container>
+            <ng-container *ngTemplateOutlet="card"></ng-container>
+        </ng-container>
+   
+
+</div>
+
+
+<ng-template #card>
+    <div class="container">
+        <div class="row g-4 mt-4 mb-4">
+            <div class="col-md-3" *ngFor="let list of doctorlist  | slice:0:slices">
+    <div class="doctor-card" >
+        <div class="info-img">
+        <img src={{list.image}} class="doctor-img" alt="">
+        <button mat-button (click)="openDialog()"><img src="./assets/images/arrow.png" alt=""></button>
+        </div>
+        <div class="doctor-info">
+            <p>{{list.name}}</p>
+            <p class="position">{{list.position}}</p>
+            <p class="position">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lore...</p>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+</ng-template>
+
